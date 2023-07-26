@@ -11,7 +11,7 @@ function App() {
 
   return (
     <div className="wrapper">
-      <Header setCurrentPage={setCurrentPage} />
+      <Header setCurrentPage={setCurrentPage} currentPage={currentPage} />
       {currentPage === 'home' && <MainHero />}
       {currentPage === 'about' && <ProductDetail />}
       {currentPage === 'contact' && <Contact />}

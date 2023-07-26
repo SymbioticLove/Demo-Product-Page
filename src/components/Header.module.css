@@ -12,6 +12,7 @@
   list-style: none;
   display: flex;
   align-items: center;
+  padding-inline-start: 0;
 }
 
 .nav li {
@@ -40,6 +41,16 @@
   position: relative;
   transition: all 0.3s ease-in-out;
   letter-spacing: .25rem;
+  margin: 0;
+  text-align: center;
+}
+
+.tagline {
+  margin-bottom: 0;
+  color: var(--secondary);
+  font-family: var(--orb);
+  letter-spacing: .15rem;
+  text-align: left;
 }
 
 .logo:before {
@@ -59,4 +70,53 @@
   visibility: visible;
   opacity: 1;
   text-shadow: 2px 2px var(--accent);
+}
+
+.link.accent {
+  color: var(--accent);
+}
+
+@media screen and (max-width: 1200px) {
+  .header {
+    padding: 5px 10px;
+  }
+  
+  .nav li {
+    margin: 0 10px;
+  }
+
+  .link {
+    font-size: 1.2rem;
+  }
+
+  .logo {
+    font-size: 2rem;
+  }
+
+  .tagline {
+    margin-bottom: .75rem;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    flex-direction: column;
+  }
+  
+  .nav {
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .nav li {
+    margin: 0 15px;
+  }
+  .nav li:hover {
+    transform: none;
+  }
+
+  .link {
+    font-size: 1rem;
+  }
 }

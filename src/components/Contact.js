@@ -11,9 +11,9 @@ const Contact = () => {
         <h2 className={styles.contactTitle}>Meet Our Extraterrestrial Team</h2>
         <p className={styles.contactText}>
           With more than a millennium of experience in intergalactic horticulture, our dedicated alien workforce is unmatched in the universe.
-          Our team has meticulously harvested seeds from pain-sensitive plants (for science!) and holds advanced degrees in TransPlantism.
+          Our team has meticulously harvested seeds from sentient, pain-sensitive plants (for science!) and holds advanced degrees in TransPlantism.
           Despite their... um...*unique* appearance, their passion for greenery is undeniable.
-          Meet our team of "eager" managers who are excited to bring their expertise to your garden!
+          Meet our team of "eager" managers who are excited to bring their expertise to <em>your</em> garden!
         </p>
         <a href="mailto:support@symbiotic.love?subject=Gimmie dem seeds" className={styles.contactButton}>
           Contact Us!
