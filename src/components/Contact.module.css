@@ -1,0 +1,95 @@
+.contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin-top: 85px;
+    background: linear-gradient(to left, var(--tertiary), var(--secondary));
+    color: var(--accent);
+}
+
+.contactContent {
+    flex: 1;
+    padding-right: 20px;
+    text-align: left;
+    transform: translateY(20px);
+    opacity: 0;
+    animation: slideInFromRight 1s ease-out forwards;
+}
+
+@keyframes slideInFromRight {
+    0% {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.contactTitle {
+    font-size: 2.2rem;
+    font-weight: 700;
+    font-family: var(--orb);
+    margin-bottom: 10px;
+    color: var(--primary);
+    text-align: right;
+    letter-spacing: .1rem;
+    text-shadow: 3px 3px 5px rgba(0,0,0,0.1);
+}
+
+.contactText {
+    font-size: 1.4rem;
+    font-family: var(--exo);
+    margin-bottom: 20px;
+    color: var(--accent);
+    text-align: right;
+    text-shadow: 1px 1px var(--primary);
+    line-height: 40px;
+}
+
+.contactImage {
+    flex: 1;
+    transform: translateY(-20px);
+    opacity: 0;
+    animation: slideInFromLeft 1s ease-out 0.5s forwards;
+}
+
+.teamImage {
+    height: 600px;
+    border-radius: 50%;
+    margin-left: 100px;
+    box-shadow: 10px 10px 20px rgba(0,0,0,0.1);
+}
+
+.contactButton {
+  display: inline-block;
+  font-size: 1.2rem;
+  font-family: var(--orb);
+  background-color: var(--secondary);
+  color: var(--primary);
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+  text-decoration: none;
+  box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
+}
+.contactButton:hover {
+  transform: scale(1.05);
+  background-color: var(--accent);
+}
+
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

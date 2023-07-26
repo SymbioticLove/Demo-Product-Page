@@ -1,0 +1,62 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--primary);
+  padding: 10px 20px;
+  color: var(--accent);
+  font-family: var(--exo);
+}
+  
+.nav {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.nav li {
+  margin: 0 20px;
+}
+.nav li:hover {
+  transform: scale(1.1);
+}
+
+.link {
+  color: var(--secondary);
+  text-decoration: none;
+  font-family: var(--orb);
+  transition: all 0.2s ease-in-out;
+  font-size: 1.5rem;
+}
+
+.link:hover {
+  color: var(--accent);
+}
+
+.logo {
+  font-size: 3rem;
+  font-weight: 700;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  letter-spacing: .25rem;
+}
+
+.logo:before {
+  content: "Galactic Greenery";
+  position: absolute;
+  color: var(--tertiary);
+  transition: all 0.3s ease-in-out;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+}
+
+.logo:hover:before {
+  visibility: visible;
+  opacity: 1;
+  text-shadow: 2px 2px var(--accent);
+}
